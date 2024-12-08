@@ -27,9 +27,24 @@ A=np.array(eval(input()))
 P,L,U=lu(A)
 print(L)
 print(U)
+
+'''Program to solve a matrix using LU decomposition.
+Developed by:Darshini B
+RegisterNumber:24008783
+'''
+
+import numpy as np
+from scipy.linalg import lu_factor,lu_solve
+a=np.array(eval(input()))
+b=np.array(eval(input()))
+lu,piv=lu_factor(a)
+x=lu_solve((lu,piv),b)
+print(x)
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/1e901939-cb6f-4d5a-a84b-b5b5d5677f1b)
+![image](https://github.com/user-attachments/assets/df666c77-c62d-41e2-973e-7d224f22c409)
+
 
 ## Result:
 Thus the program to find the LU Decomposition of a matrix is written and verified using python programming.
